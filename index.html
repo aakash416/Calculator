@@ -21,7 +21,7 @@
             </div>
             <div class="button">
                 <button class="ce" value=""
-                    onclick="form.calculation.value=form.calculation.value.substring(0,form.calculation.value.length-1)">CE</button>
+                    onclick="form.calculation.value=form.calculation.value.substring(0,form.calculation.value.length-1),form.calculation.value==''?form.ans.value='':''">CE</button>
                 <button class="number" value=""
                     onclick="form.calculation.value='',form.sign.value='',form.ans.value=''">C</button>
                 <button class="number" value="%" onclick="form.calculation.value+='%',form.sign.value='%'">%</button>
