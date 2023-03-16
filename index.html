@@ -45,7 +45,8 @@
                     onclick="form.sign.value='+',form.calculation.value[form.calculation.value.length-1]=='+'? form.calculation.value:form.calculation.value+='+'">&plus;</button>
                 <button class="number" value="+" onclick="form.calculation.value+='+'">&plus; &#8725; &minus;</button>
                 <button class="number" value="0" onclick="form.calculation.value+='0'">0</button>
-                <button class="number" value="." onclick="form.calculation.value+='.'">.</button>
+                <button class="number" value="."
+                    onclick="form.calculation.value[form.calculation.value.length-1]=='.'? form.calculation.value:form.calculation.value+='.'">.</button>
                 <button class="equal" value="="
                     onclick="form.sign.value='=',form.ans.value=eval(form.calculation.value)">&equals;</button>
             </div>
