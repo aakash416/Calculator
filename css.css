@@ -90,6 +90,13 @@ body {
   line-height: 28px;
   align-items: center;
   letter-spacing: -0.02em;
+  transition: transform 0.2s;
+}
+
+.button > button:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .ce {
@@ -101,6 +108,14 @@ body {
     ),
     #2d2a37;
 }
+.ce:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #3e3c48;
+}
 .number {
   color: #ebebeb;
   background: linear-gradient(
@@ -109,6 +124,14 @@ body {
       rgba(255, 255, 255, 0.05) 100%
     ),
     #2d2a37;
+}
+.number:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #3e3c48;
 }
 .operator {
   color: #ebebeb;
@@ -120,7 +143,14 @@ body {
     #462878;
   font-size: 32px;
 }
-
+.operator:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0.01%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #593b89;
+}
 .equal {
   color: #ebebeb;
   background: linear-gradient(
@@ -129,4 +159,13 @@ body {
       rgba(255, 255, 255, 0.05) 100%
     ),
     #7f45e2;
+}
+
+.equal:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #6f2de1;
 }

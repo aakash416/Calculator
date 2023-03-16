@@ -24,24 +24,25 @@
                     onclick="form.calculation.value=form.calculation.value.substring(0,form.calculation.value.length-1),form.calculation.value==''?form.ans.value='':''">CE</button>
                 <button class="number" value=""
                     onclick="form.calculation.value='',form.sign.value='',form.ans.value=''">C</button>
-                <button class="number" value="%" onclick="form.calculation.value+='%',form.sign.value='%'">%</button>
+                <button class="number" value="%"
+                    onclick="form.calculation.value[form.calculation.value.length-1]=='%'? form.calculation.value:form.calculation.value+='%',form.sign.value='%'">%</button>
                 <button class="operator" value="/"
-                    onclick="form.calculation.value+='/',form.sign.value='/'">&divide;</button>
+                    onclick="form.calculation.value[form.calculation.value.length-1]=='/'? form.calculation.value:form.calculation.value+='/',form.sign.value='/'">&divide;</button>
                 <button class="number" value="7" onclick="form.calculation.value+='7'">7</button>
                 <button class="number" value="8" onclick="form.calculation.value+='8'">8</button>
                 <button class="number" value="9" onclick="form.calculation.value+='9'">9</button>
                 <button class="operator" value="*"
-                    onclick="form.calculation.value+='*',form.sign.value='*'">&times;</button>
+                    onclick="form.calculation.value[form.calculation.value.length-1]=='*'? form.calculation.value:form.calculation.value+='*',form.sign.value='*'">&times;</button>
                 <button class="number" value="4" onclick="form.calculation.value+='4'">4</button>
                 <button class="number" value="5" onclick="form.calculation.value+='5'">5</button>
                 <button class="number" value="6" onclick="form.calculation.value+='6'">6</button>
                 <button class="operator" value="-"
-                    onclick="form.calculation.value+='-',form.sign.value='-'">&minus;</button>
+                    onclick="form.calculation.value[form.calculation.value.length-1]=='-'? form.calculation.value:form.calculation.value+='-',form.sign.value='-'">&minus;</button>
                 <button class="number" value="1" onclick="form.calculation.value+='1'">1</button>
                 <button class="number" value="2" onclick="form.calculation.value+='2'">2</button>
                 <button class="number" value="3" onclick="form.calculation.value+='3'">3</button>
                 <button class="operator" value="+"
-                    onclick="form.calculation.value+='+',form.sign.value='+'">&plus;</button>
+                    onclick="form.sign.value='+',form.calculation.value[form.calculation.value.length-1]=='+'? form.calculation.value:form.calculation.value+='+'">&plus;</button>
                 <button class="number" value="+" onclick="form.calculation.value+='+'">&plus; &#8725; &minus;</button>
                 <button class="number" value="0" onclick="form.calculation.value+='0'">0</button>
                 <button class="number" value="." onclick="form.calculation.value+='.'">.</button>
